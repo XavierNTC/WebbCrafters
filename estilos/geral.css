@@ -1,0 +1,221 @@
+:root {
+    --h1: #ffffff;
+    --h2: #18b5d9;
+    --texto: #ffffff;
+    --menu: #ffffff;
+    --preto: #000000;
+    --corpo: #000000;
+    --branco: #ffffff;
+    --azulCiano: #18b5d9;
+    --azulCinzento: #1F2F33;
+    --cubos: #272a59fa;
+    --footer: #0306296b;
+    --azulClaro: rgb(122, 122, 255);
+    --cinza: #808080;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+* {
+    font-family: var(--fonte-padrao);
+    box-sizing: border-box;
+    color: var(--texto);
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+    background-color: rgba(0, 0, 0, 0.89);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.911));
+}
+body {
+    margin: auto;
+    display: block;
+    max-width: 2000px;
+    /*
+    border-left: 2px solid var(--branco);
+    border-right: 2px solid var(--branco);
+    */
+    background-color: var(--corpo);
+}
+
+
+/*                                                                  Header*/
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 2000px;
+    height: 80px;
+    padding: 3px;
+    border-bottom: 1px solid var(--branco);
+}
+header menu {
+    display: flex;
+}
+header  menu  li {
+    display: flex;
+    align-items: flex-end;
+    list-style-type: none;
+    text-decoration: none;
+    height: 80px;
+}
+header  menu  a {
+    display: inline-flex;
+    text-decoration: none;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 150px;
+    height:55px;
+    margin-right: min(30px, 1.5vw);
+    padding: 10px 10px 0px 10px;
+
+}
+header  menu  a:hover {
+    border-bottom: 4px solid var(--branco);
+}
+#secaoImagens {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid var(--branco);
+    padding-right: 20px;
+}
+.logoHeader {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+.legendaHeader {
+    width: 150px;
+    height: 25px;
+}
+/*
+#botaoFaleConosco {
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid var(--azulCiano);
+    color: var(--azulCiano);
+    height: 60px;
+    width: 150px;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 20px 10px;
+    margin-right: 30px;
+}
+#botaoFaleConosco:hover{
+    border: 2px solid var(--azulCiano);
+}
+*/
+
+/*                                                                  Corpo*/
+
+
+main {
+    max-width: 2000px;
+}
+h1 {
+    font-family: "Orbitron";
+}
+h2 {
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: var(--h2);
+    font-size: 2.8em;
+    margin: 0px 10px 0px 10px; 
+}
+p {
+    font-size: 1.2em;
+    line-height: 30px;
+}
+a {
+    text-decoration: none;
+}
+#primeiraTela {
+    width: 100%;
+    height: min(90vh, 1100px);
+}
+#artigoPrimeiraTela h1 {
+    margin-top: 20%;
+    margin-bottom: 20px;
+    font-size: 3.3em;
+}
+
+
+/*                                                                  Footer*/
+
+
+footer {
+    background-color: var(--footer);
+    border-top: 2px solid var(--branco);
+}
+footer img#logoFooter {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    height: 100px;
+    margin-bottom: 100px;
+}
+footer p {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 70px;
+    max-width: 800px;
+}
+#divEmail {
+    display: flex;
+    justify-content: center;
+}
+#pEmail {
+    display: inline-block;
+    margin: auto;
+    max-width: 90vw;
+    color: var(--branco);
+    font-weight: 600;
+    padding: 0px 30px 20px 30px;
+    border-bottom: 2px solid var(--branco);
+    transition: color ease 0.3s, border ease 0.3s;
+
+}
+#footerIcons {
+    margin-top: 50px;
+}
+#creditos {
+    display: flex;
+    justify-content: space-between;
+    max-width: 20vw;
+    min-width: 150px;
+    font-size: 0.5em;
+    padding: 0px;
+}
+
+/*                                                  Outros  */
+
+.soNoTablet {
+    display: none;
+}
+.soMobile {
+    display: none;
+}
+.Azulciano {
+    color: var(--azulCiano);
+}
+.aEsquerda {
+    text-align: right;
+}
+.paraDireita {
+    align-self: flex-end;
+}
+.link {
+    color: var(--azulCiano);
+    font-weight: bolder;
+}
+.link:hover {
+    color: var(--azulCinzento);
+}
+.none {
+    display: none;
+}

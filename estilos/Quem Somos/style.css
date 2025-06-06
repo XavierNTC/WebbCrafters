@@ -1,0 +1,180 @@
+:root {
+    --h1: #ffffff;
+    --h2: #18b5d9;
+    --texto: #ffffff;
+    --menu: #ffffff;
+    --preto: #000000;
+    --corpo: #000000;
+    --branco: #ffffff;
+    --azulCiano: #18b5d9;
+    --cubos: #272a59fa;
+    --footer: #0306296b;
+    --cinza: #808080;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+} 
+
+/*                                                                  Header*/
+
+
+
+
+
+/*                                                                  Corpo*/
+
+
+h1 {
+    margin-left: 15px;
+}
+#primeiraTela {
+    background: black url(../../imagens/quem\ \ somos.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center center;
+}
+#sobreFundo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0),black);
+}
+#artigoPrimeiraTela {
+    display: flow;
+    width: 55%;
+    height: 100%;
+}
+#artigoPrimeiraTela p {
+    margin-left: 15px;
+    line-height: 35px;
+    font-size: 1.3em;
+}
+ 
+/*                                                                   Footer */
+
+
+
+
+/*                                                               Sobre nós  */
+
+
+#secaoSobreNos article {
+    margin: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 45% 55%;
+    max-width: 95vw;
+}
+#secaoSobreNos h2 {
+    margin: auto;
+    text-align: center;
+    border-top: 2px solid var(--h2);
+    width: 500px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#secaoSobreNos img {
+    max-width: 40vw;
+}
+
+
+/*                                                 Seção missão e visão  */
+
+
+#secaoMissaoVisao {
+    margin: auto;
+    max-width: 85vw;
+
+}
+#secaoMissaoVisao h2 {
+    text-align: right;
+    margin-bottom: 50px;
+}
+#secaoMissaoVisao span {
+    display: inline-block;
+    border: 1px solid var(--azulCiano);
+    min-width: 550px;
+    width: 45vw;
+    padding: 20px;
+    border-radius: 15px; 
+    margin-bottom: 35px;
+}
+#secaoMissaoVisao h4 {
+    font-family: "Orbitron";
+    text-align: center;
+    color: var(--azulCiano);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+#caixaSpanVisao {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/*                                                 Seção valores  */
+
+#valores {
+    margin: auto;
+    max-width: 90vw;
+}
+#valores h2 {
+    margin-bottom: 40px;
+}
+#valores > article {
+    display: grid;
+    grid-template-columns: 39% 22% 39%;
+    grid-template-rows: repeat(3, 1fr);
+}
+#valores h3 {
+    font-family: "Orbitron";
+    color: var(--azulCiano);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+#valores img {
+    align-self: center;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2/3;
+}
+#artigoExcelencia {
+    align-self: center;
+    grid-row: 2/3;
+}
+#artigoCompromisso {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    grid-column: 3;
+}
+#artigoIntegridade {
+    align-self: flex-start;
+    margin-top: 20px;
+    grid-column: 3;
+    grid-row: 3/3;
+}
+
+
+
+/*                                                 Divisões  */
+
+
+
+#divisaoZero {
+    height: 60px;
+}
+#divisaoUm {
+    border-top: 2px solid rgba(255, 255, 255, 0.61);
+    height: 160px;
+}
+#divisaoDois {
+    height: 160px;
+}
+#divisaoTres {
+    height: 200px;
+}
+#divisaoQuatro {
+    height: 160px;
+}
+
+
+/*                                                  Outros  */

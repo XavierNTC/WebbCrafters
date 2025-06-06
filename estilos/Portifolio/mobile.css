@@ -1,0 +1,248 @@
+:root {
+    --h1: #ffffff;
+    --h2: #18b5d9;
+    --texto: #ffffff;
+    --menu: #ffffff;
+    --preto: #000000;
+    --corpo: #000000;
+    --branco: #ffffff;
+    --azulCiano: #18b5d9;
+    --cubos: #272a59fa;
+    --footer: #0306296b;
+    --footerMobile: #070d5598;
+    --fundoHeaderMobile: #000000ea;
+    --cinza: #808080;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+ 
+/*                                                                  Header*/
+
+
+header { 
+    position: fixed;
+    background-color: var(--fundoHeaderMobile);
+    width: 100%;
+    height: 60px;
+}
+header menu {
+    display: none;
+}
+.logoHeader {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.legendaHeader {
+    width: 90px;
+    height: 15px;
+}
+.iconMenu {
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.espacoMenu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 1500px;
+    background-color: #000000;
+    transition: left 0.2s ease;
+}
+.espacoMenu.aberto {
+    left: 0;
+}
+#controle {
+    overflow-y: auto;
+    height: calc(100vh - 100px); 
+}
+#controle::-webkit-scrollbar {
+    width: 0px;
+}
+#iconMenuDois {
+    margin: 0px 10px 0px 0px;
+}
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--branco);
+    padding: 7px;
+    height: 80px;
+}
+#cabecalho #secaoImagensDois {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 10px;
+}
+.itemMenuRetroativo {
+    display: flex;
+    align-items: center;
+    font-family: 'Orbitron';
+    margin: auto;
+    border-bottom: 1px solid var(--branco);
+    width: 85vw;
+    height: 100px;
+}
+.itemMenuRetroativo a {
+    font-size: 1.5em;
+    font-family: 'Orbitron';
+    margin-left: 0px;
+}
+.itemMenuRetroativo a:hover {
+    color: var(--azulCiano);
+}
+
+/*                                                                  Corpo*/
+
+ 
+h2 {
+    font-size: 2.4em;
+}
+@media screen and (max-width: 300px) {
+    h2 {
+        font-size: 1.7em;
+    }
+}
+p {
+    max-width: 95vw;
+    margin: auto;
+}
+#primeiraTela {
+    height: 500px;
+    background: black url(../../imagens/portifolio\ cortado.jpg) no-repeat fixed;
+    background-size: contain;
+}
+@media screen and (orientation: landscape) {
+    #primeiraTela {
+        background-size: cover;
+        background-position: right center;
+    }
+}
+#sobreFundo {
+    justify-content: left;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.932), black, black);
+    height: 500px;
+}
+#artigoPrimeiraTela {
+    margin-top: 220px;
+    width: 80vw;
+    height: 500px;
+}
+#artigoPrimeiraTela h1 {
+    margin-top: 10%;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    margin-right: 5px;
+}
+#artigoPrimeiraTela p {
+    max-width: 70vw;
+    line-height: 30px;
+    font-size: 0.9em;
+}
+@media screen and (max-width: 300px) {
+    #artigoPrimeiraTela h1 {
+        font-size: 2em;
+        margin-left: 5px;
+    }
+    #artigoPrimeiraTela p {
+        margin-left: 5px;
+    }
+}
+#paragrafoDivisor {
+    font-size: 0.9em;
+    max-width: 95vw;
+    padding: 0px 5px 30px 5px;
+}
+
+/*                                                                  Footer*/
+
+
+footer {
+    background-color:var(--footerMobile);
+}
+footer img#logoFooter {
+    height: 80px;
+}
+footer p {
+    font-size: 1em;
+    max-width: 98vw;
+}
+
+
+
+/*                                                                  Seção pré-portfólio*/
+
+
+#secaoPrePortfolio {
+    max-width: 95vw;
+    grid-template-columns: 1fr;
+}
+#secaoPrePortfolio h3 {
+    padding: 10px;
+}
+#secaoPrePortfolio p {
+    padding: 10px;
+}
+@media screen and (max-width: 300px) {
+    #secaoPrePortfolio h3 {
+        font-size: 1.4em;
+        margin-bottom: 30px;
+    }
+    #secaoPrePortfolio p {
+        font-size: 1em;
+    }
+}
+#secaoPrePortfolio img {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 100%;
+}
+ 
+
+/*                                                                  Seção Projetos */
+
+
+.exemplo {
+    --alturaExemplo: 380px;
+}
+
+
+
+/*                                                 Divisões  */
+
+
+#divisaoUm {
+    border-top: none;
+    height: 200px;
+}
+#divisaoDois {
+    height: 160px;
+}
+#divisaoTres {
+    height: 200px;
+}
+
+
+/*                                                  Outros  */
+
+
+.Azulciano {
+    color: var(--azulCiano);
+}
+.aEsquerda {
+    text-align: right;
+}
+.paraDireita {
+    align-self: flex-end;
+}
+.soMobile {
+    display: block;
+}
+.naoNoMobile {
+    display: none;
+}
+

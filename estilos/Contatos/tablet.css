@@ -1,0 +1,63 @@
+:root {
+    --h1: #ffffff;
+    --h2: #18b5d9;
+    --texto: #ffffff;
+    --menu: #ffffff;
+    --preto: #000000;
+    --corpo: #000000;
+    --branco: #ffffff;
+    --azulCiano: #18b5d9;
+    --cubos: #272a59fa;
+    --footer: #0306296b;
+    --fundoHeaderMobile: #000000ea;
+    --cinza: #808080;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+/*                                                                  Header*/
+
+header  menu  a {
+    width: 120px;
+    margin-right: 5px;
+}
+
+
+/*                                                                  Corpo*/
+
+
+p {
+    font-size: 1.1em;
+    line-height: 30px;
+}
+
+
+
+/*                                                  Seção contatos  */
+
+
+.cubos {
+    min-width: 120px;
+    width: 40vw;
+    max-width: 300px;
+}
+.cubos p {
+    color: var(--branco);
+    font-size: 1.8em;
+}
+#espacoContatos {
+    max-width: 90vw;
+}
+
+
+
+/*                                                  Outros  */
+
+.naoNoTablet {
+    display: none;
+}
+.soNoTablet {
+    display: block;
+}
+.soComputador {
+    display: none;
+}

@@ -1,0 +1,114 @@
+:root {
+    --h1: #ffffff;
+    --h2: #18b5d9;
+    --texto: #ffffff;
+    --menu: #ffffff;
+    --preto: #000000;
+    --corpo: #000000;
+    --branco: #ffffff;
+    --azulCiano: #18b5d9;
+    --azulCinzento: #1F2F33;
+    --cubos: #272a59fa;
+    --footer: #0306296b;
+    --cinza: #808080;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+/*                                                                  Header*/
+
+
+
+
+/*                                                                  Corpo*/
+
+
+
+
+h1 {
+    margin-left: 15px;
+}
+#primeiraTela {
+    background: black url(../../imagens/servicos.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center center;
+}
+#sobreFundo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0),black);
+}
+#artigoPrimeiraTela {
+    display: flow;
+    width: 55%;
+    height: 100%;
+}
+#artigoPrimeiraTela p {
+    margin-left: 15px;
+    line-height: 35px;
+    font-size: 1.3em;
+}
+
+/*                                                                  Footer*/
+
+
+
+
+/*                                                                 Seção Serviços */
+
+
+
+.servicos {
+    display: grid;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 350px;
+    height: 500px;
+    padding: 0px 25px;
+    margin-bottom: 50px;
+}
+#secaoServicos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 90vw;
+}
+#secaoServicos  p {
+    font-size: 1.1em;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+#secaoServicos h3 {
+    font-family: "Orbitron";
+    color: var(--cinza);
+    font-size: 1.7em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/*                                                 Divisões  */
+
+
+#divisaoUm {
+    border-top: 2px solid rgba(255, 255, 255, 0.61);
+    height: 160px;
+}
+#divisaoDois {
+    height: 160px;
+}
+#divisaoTres {
+    height: 200px;
+}
+#divisaoQuatro {
+    height: 160px;
+}
+#divisaoCinco {
+    height: 160px;
+}
+
+/*                                                  Outros  */

@@ -1,0 +1,136 @@
+:root {
+    --h1: #ffffff;
+    --h2: #18b5d9;
+    --texto: #ffffff;
+    --menu: #ffffff;
+    --preto: #000000;
+    --corpo: #000000;
+    --branco: #ffffff;
+    --azulCiano: #18b5d9;
+    --cubos: #272a59fa;
+    --footer: #0306296b;
+    --fundoHeaderMobile: #000000ea;
+    --cinza: #808080;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+/*                                                                  Header*/
+
+header  menu  a {
+    width: 120px;
+    margin-right: 5px;
+}
+
+
+/*                                                                  Corpo*/
+
+
+
+h2 {
+    font-size: 2.4em;
+}
+p {
+    font-size: 1.1em;
+    line-height: 30px;
+}
+
+#primeiraTela {
+    background: black url(../../imagens/tela\ fundo\ cortada.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: right center;
+}
+#artigoPrimeiraTela h1 {
+    font-size: 3em;
+}
+#artigoPrimeiraTela p {
+    line-height: 35px;
+    font-size: 1.1em;
+}
+
+
+/*                                                       Paragrafos retrateis*/
+
+
+
+#secaoParagrafoRetratil h2 {
+    font-size: 2.4em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+
+/*                                                       Seção Tempo*/
+
+
+
+#secaoTempo {
+    max-width: 80vw;
+    margin: auto;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+}
+#conteinerImagensTempo {
+    margin-bottom: 100px;
+}
+#imagemSecaoTempo1 {
+    max-width: 100%;
+    height: auto;
+}
+#imagemSecaoTempo2 {
+    max-width: 44%;
+    height: auto;
+}
+#secaoTempo article {
+    max-width: 700px;
+}
+#secaoTempo h2 {
+    font-size: 2.4em;
+}
+
+
+/*                                                     Seção cubos/ Custos*/
+
+
+.cubos {
+    max-width: 350px;
+}
+.cubos h6 {
+    font-size: 1.7em;
+}
+.cubos p {
+    font-size: 1.1em;
+}
+#secaoCustos h2 {
+    font-size: 2.4em;
+}
+#espacoCubos {
+    max-width: 750px;
+}
+
+
+/*                                                 Seção Manutenção  */
+
+
+#secaoManutencao img {
+    width: 25vw;
+    height: auto;
+    margin-right: max(2vw, 10px);
+}
+#secaoManutencao p {
+    max-width: 55vw;
+    margin-left: max(3vw, 10px);
+}
+
+
+/*                                                  Outros  */
+
+.naoNoTablet {
+    display: none;
+}
+.soNoTablet {
+    display: block;
+}
+.soComputador {
+    display: none;
+}

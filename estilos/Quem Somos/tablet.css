@@ -1,0 +1,156 @@
+:root {
+    --h1: #ffffff;
+    --h2: #18b5d9;
+    --texto: #ffffff;
+    --menu: #ffffff;
+    --preto: #000000;
+    --corpo: #000000;
+    --branco: #ffffff;
+    --azulCiano: #18b5d9;
+    --cubos: #272a59fa;
+    --footer: #0306296b;
+    --fundoHeaderMobile: #000000ea;
+    --cinza: #808080;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+} 
+/*                                                                  Header*/
+
+header  menu  a {
+    width: 120px;
+    margin-right: 5px;
+}
+
+
+/*                                                                  Corpo*/
+
+
+
+h2 {
+    font-size: 2.4em;
+}
+p {
+    font-size: 1.1em;
+    line-height: 30px;
+}
+
+#primeiraTela {
+    background: black url(../../imagens/quem\ \ somos.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: right center;
+}
+#artigoPrimeiraTela {
+    width: 60%;
+}
+#artigoPrimeiraTela h1 {
+    margin-left: 15px;
+    font-size: 3em;
+}
+#artigoPrimeiraTela p {
+    line-height: 35px;
+    font-size: 1.1em;
+}
+
+
+
+/*                                                 Sobre nós  */
+
+#secaoSobreNos article {
+    grid-template-columns: 1fr;
+    max-width: 90vw;
+}
+#secaoSobreNos h2 {
+    width: 500px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#secaoSobreNos img {
+    margin: auto;
+    max-width: 80vw;
+}
+
+
+/*                                                 Seção valores  */
+
+
+#valores {
+    margin: auto;
+    max-width: 95vw;
+}
+#valores h2 {
+    margin-bottom: 40px;
+}
+#valores > article {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    max-height: 700px;
+}
+#valores h3 {
+    font-family: "Orbitron";
+    color: var(--azulCiano);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+#valores img {
+    align-self: center;
+    width: 70%;
+    grid-column: 3;
+    grid-row: 2/3;
+}
+#artigoExcelencia {
+    align-self: center;
+}
+#artigoCompromisso {
+    align-self: flex-end;
+    margin-bottom: 10%;
+    grid-column: 3;
+}
+#artigoIntegridade {
+    align-self: flex-start;
+    margin-top: 10%;
+    grid-column: 3;
+    grid-row: 3/3;
+}
+
+
+
+
+/*                                                 Divisões  */
+
+
+#divisaoUm {
+    border-top: 2px solid rgba(255, 255, 255, 0.61);
+    height: 160px;
+}
+#divisaoDois {
+    height: 160px;
+}
+#divisaoTres {
+    height: 200px;
+}
+#divisaoQuatro {
+    height: 200px;
+}
+
+
+/*                                                  Outros  */
+
+
+.soMobile {
+    display: none;
+}
+.Azulciano {
+    color: var(--azulCiano);
+}
+.aEsquerda {
+    text-align: right;
+}
+.paraDireita {
+    align-self: flex-end;
+}
+.naoNoTablet {
+    display: none;
+}
+.soNoTablet {
+    display: block;
+}

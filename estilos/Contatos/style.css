@@ -1,0 +1,179 @@
+:root {
+    --h1: #ffffff;
+    --h2: #18b5d9;
+    --texto: #ffffff;
+    --menu: #ffffff;
+    --preto: #000000;
+    --corpo: #000000;
+    --branco: #ffffff;
+    --azulCiano: #18b5d9;
+    --botaoHover: #137a91;
+    --azulCinzento: #1F2F33;
+    --cubos: #272a59fa;
+    --footer: #0306296b;
+    --cinza: #808080;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+/*                                                                  Header*/
+ 
+
+
+
+/*                                                                  Corpo*/
+#divh1 {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    display: inline-block;
+    text-align: center;
+
+    padding: 10% 20px 40px 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 4em;
+    margin-left: 0px;
+    border-bottom: 2px solid var(--branco);
+}
+
+/*                                                Espaço Contatos  */
+
+
+.cubos {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    height: 400px;
+    min-width: 120px;
+    width: 40vw;
+    max-width: 300px;
+    margin: 0px 20px 40px 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--preto);
+
+    transition: transform 0.3s ease;
+}
+.cubos:hover {
+    transform: scale(1.1);
+}
+.cubos::before {
+    content: "";
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+
+    transition: opacity 0.3s ease;
+}
+.cubos:hover::before {
+    opacity: 1; 
+}
+.cubos p {
+    position: absolute;
+    text-align: center;
+    font-family: "Orbitron";
+
+    top: 50%;
+    left: 50%;
+    color: var(--branco);
+    font-size: 1.8em;
+    opacity: 0; 
+
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+}
+.cubos:hover p {
+    opacity: 1; 
+} 
+#espacoContatos {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    max-width: 80vw;
+}
+#cubo1 {
+    background: rgba(0, 0, 0, 0) url(../../imagens/instagram-background-gradient-colors_23-2147828668.avif) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#cubo2 {
+    background: rgba(0, 0, 0, 0) url(../../imagens/mail\ 2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#cubo3 {
+    background: rgba(0, 0, 0, 0) url(../../imagens/social-media-linkedin-splash_125540-361.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#cubo4 {
+    background: white url(../../imagens/msg\ 3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*                                                 Seção FeedBack  */
+
+#secaoFeedback {
+    margin: auto;
+    width: 90vw;
+}
+#secaoFeedback hr {
+    border: none;
+    border-top: #4f5152 solid 1px;
+}
+#secaoFeedback h2 {
+    margin: 40px auto;
+    text-align: center;
+    color: var(--texto);
+}
+#secaoFeedback div {
+    margin: 60px auto 40px auto;
+    padding: 20px;
+    width: 30vw;
+    border-radius: 15px;
+    border: 2px solid var(--branco);
+    background-color: var(--preto);
+    transition: all ease 2s;
+}
+#secaoFeedback div p {
+    margin: auto;
+    text-align: center;
+    color: var(--texto);
+}
+#secaoFeedback div:hover {
+    border: 2px solid var(--branco);
+    background-color: var(--branco);
+}
+#secaoFeedback div:hover p {
+    color: var(--preto);
+}
+
+
+
+/*                                                 Divisões  */
+
+#divisaoZero {
+    height: 180px;
+}
+#divisaoUm {
+    height: 160px;
+}
+#divisaoDois {
+    height: 160px;
+}
+#divisaoTres {
+    height: 160px;
+}

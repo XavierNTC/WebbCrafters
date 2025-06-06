@@ -1,0 +1,263 @@
+:root {
+    --h1: #ffffff;
+    --h2: #18b5d9;
+    --texto: #ffffff;
+    --menu: #ffffff;
+    --preto: #000000;
+    --corpo: #000000;
+    --branco: #ffffff;
+    --azulCiano: #18b5d9;
+    --azulCinzento: #1F2F33;
+    --cubos: #272a59fa;
+    --footer: #0306296b;
+    --cinza: #808080;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+/*                                                                  Header*/
+
+
+
+
+/*                                                                  Corpo*/
+
+
+
+#primeiraTela {
+    background: black url(../../imagens/tela\ fundo.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: right center;
+}
+#sobreFundo {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0),black);
+}
+#artigoPrimeiraTela {
+    display: flow;
+    width: 40%;
+    height: 560px;
+}
+#artigoPrimeiraTela p {
+    line-height: 35px;
+    font-size: 1.3em;
+}
+
+/*                                                                  Footer*/
+
+
+
+
+/*                                                       Paragrafos retrateis*/
+
+.divisoesParagrafoRetratil {
+    display: block;
+    margin: auto;
+    border-bottom: 1px solid var(--azulCiano);
+    max-width: 90vw;
+}
+.paragrafoRetratil {
+    text-align: justify;
+    margin: auto;
+    width: 900px;
+    max-width: 95%;
+ 
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.9s ease;
+}
+.paragrafoRetratil.expandir {
+    max-height: 800px;
+}
+.setaParagrafoRetratil {
+    cursor: pointer;
+    margin: auto;
+    padding: 5px 25px 5px 25px;
+}
+.setaParaCima {
+    transform: rotate(180deg);
+    transition: transform 0.8s ease;
+}
+.setaParaBaixo {
+    transform: rotate(0deg);
+    transition: transform 0.8s ease;
+}
+.imagensParagrafoRetratil {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    max-height: 300px;
+    max-width: 80vw;
+    border-radius: 15px;
+}
+#secaoParagrafoRetratil h2 {
+    font-size: 2.7em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#secaoParagrafoRetratil div {
+    display: flex;
+}
+
+
+/*                                                       Seção Tempo*/
+
+
+#secaoTempo {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
+}
+#conteinerCentralizador {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+#conteinerImagensTempo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    max-width: 45vw;
+    width: 75%;
+}
+#conteinerImagensTempo2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imagemSecaoTempo1 {
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+#imagemSecaoTempo2 {
+    margin: auto;
+    z-index: 1;
+    width: 42%;
+    max-width: 220px;
+    height: auto;
+}
+#secaoTempo article {
+    max-width: 90%;
+}
+#secaoTempo h2 {
+    font-size: 3em;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+
+
+/*                                                     Seção cubos/ Custos*/
+
+
+.cubos {
+    display: grid;
+    align-items: center;
+    border: 3px solid var(--azulCiano);
+    padding: 5px;
+    height: 250px;
+
+    min-width: 120px;
+    width: 40vw;
+    max-width: 400px;
+
+
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+.cubos h6 {
+    font-family: "Orbitron";
+    text-align: center;
+    font-size: 2em;
+    padding: 5px;
+}
+.cubos p {
+    align-self: flex-end;
+    font-size: 1.3em;
+}
+#secaoCustos h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+#secaoCustos p {
+    text-align: center;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 4px;
+}
+#secaoCustos > p {
+    padding: 0px;
+    margin-bottom: 40px;
+}
+
+#espacoCubos {
+    display: grid;
+    justify-items: center;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 880px;
+}
+
+
+/*                                                 Seção Manutenção  */
+
+
+#secaoManutencao {
+    margin: auto;
+    max-width: 1700px;
+}
+#secaoManutencao h2 {
+    text-align: center;
+}
+#secaoManutencao article {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+#secaoManutencao img {
+    width: 25vw;
+    max-width: 600px;
+    height: auto;
+    margin-right: max(5vw, 50px);
+}
+#secaoManutencao p {
+    max-width: 50vw;
+    margin-left: max(5vw, 50px);
+}
+
+/*                                                 Divisões  */
+
+
+#divisaoUm {
+    border-top: 2px solid rgba(255, 255, 255, 0.61);
+    height: 160px;
+}
+#divisaoDois {
+    height: 160px;
+}
+#divisaoTres {
+    height: 200px;
+}
+#divisaoQuatro {
+    height: 160px;
+}
+#divisaoCinco {
+    height: 160px;
+}
+
+/*                                                  Outros  */

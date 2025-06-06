@@ -1,0 +1,350 @@
+:root {
+    --h1: #ffffff;
+    --h2: #18b5d9;
+    --texto: #ffffff;
+    --menu: #ffffff;
+    --preto: #000000;
+    --corpo: #000000;
+    --branco: #ffffff;
+    --azulCiano: #18b5d9;
+    --cubos: #272a59fa;
+    --footer: #0306296b;
+    --footerMobile: #070d5598;
+    --fundoHeaderMobile: #000000ea;
+    --cinza: #808080;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+ 
+/*                                                                  Header*/
+
+
+header {
+    position: fixed;
+    z-index: 2;
+    background-color: var(--fundoHeaderMobile);
+    width: 100%;
+    height: 60px;
+}
+header menu {
+    display: none;
+}
+.logoHeader {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.legendaHeader {
+    width: 90px;
+    height: 15px;
+}
+
+.iconMenu {
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.espacoMenu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 1500px;
+    background-color: #000000;
+    transition: left 0.2s ease; 
+}
+.espacoMenu.aberto {
+    left: 0; 
+}
+#controle {
+    overflow-y: auto;
+    height: calc(100vh - 100px); 
+}
+#controle::-webkit-scrollbar {
+    width: 0px; 
+}
+#iconMenuDois {
+    margin: 0px 10px 0px 0px;
+}
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--branco);
+    padding: 7px;
+    height: 80px;
+}
+#cabecalho #secaoImagensDois {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 10px;
+}
+.itemMenuRetroativo {
+    display: flex;
+    align-items: center;
+    font-family: 'Orbitron';
+    margin: auto;
+    border-bottom: 1px solid var(--branco);
+    width: 85vw;
+    height: 100px;
+}
+.itemMenuRetroativo a {
+    font-size: 1.5em;
+    font-family: 'Orbitron';
+    margin-left: 0px;
+}
+.itemMenuRetroativo a:hover {
+    color: var(--azulCiano);
+}
+
+/*                                                                  Corpo*/
+
+
+p {
+    max-width: 95vw;
+    margin: auto;
+}
+@media screen and (max-width: 300px) {
+    p {
+       font-size: 1em;
+    }
+}
+#primeiraTela {
+    height: 500px;
+    background: black url(../../imagens/tela\ fundo\ cortada.jpg) no-repeat fixed;
+    background-size: contain;
+}
+@media screen and (orientation: landscape) {
+    #primeiraTela {
+        background-size: cover;
+    }
+}
+#sobreFundo {
+    justify-content: left;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.774), black);
+    height: 500px;
+}
+#artigoPrimeiraTela {
+    margin-top: 190px;
+    width: 80vw;
+    height: 500px;
+}
+#artigoPrimeiraTela h1 {
+    margin-left: 15px;
+    margin-top: 10%;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    margin-right: 5px;
+}
+#artigoPrimeiraTela p {
+    margin-left: 15px;
+    line-height: 30px;
+    font-size: 0.9em;
+}
+@media screen and (max-width: 300px) {
+    #sobreFundo {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.740), rgba(0, 0, 0, 0.780), black);
+    }
+    #artigoPrimeiraTela h1 {
+        margin-top: 10%;
+        font-size: 2em;
+        margin-left: 5px;
+    }
+    #artigoPrimeiraTela p {
+        margin-left: 5px;
+    }
+}
+
+
+/*                                                                  Footer*/
+
+
+footer {
+    background-color:var(--footerMobile);
+}
+footer img#logoFooter {
+    height: 80px;
+}
+footer p {
+    font-size: 1em;
+    max-width: 98vw;
+}
+
+
+
+/*                                                     Paragrafos retrateis*/
+
+
+#secaoParagrafoRetratil h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.paragrafoRetratil {
+    text-align: left;
+}
+@media screen and (max-width: 300px) {
+    #secaoParagrafoRetratil h2 {
+        font-size: 1.4em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #quebraH2Retratil {
+        display: none;
+    }
+}
+
+/*                                                       Seção Tempo*/
+
+
+#secaoTempo {
+    grid-template-columns: repeat(1, 1fr);
+}
+#conteinerImagensTempo {
+    margin-bottom: 100px;
+    max-width: 90vw;
+}
+#imagemSecaoTempo1 {
+    max-width: 80%;
+    height: auto;
+}
+#imagemSecaoTempo2 {
+    max-width: 34%;
+    height: auto;
+}
+#secaoTempo h2 {
+    font-size: 1.5em;
+    margin-left: max(5px, 2vw);
+}
+#secaoTempo p {
+    margin-left: max(5px, 2vw);
+}
+
+/*                                                Seção cubos/ Custos*/
+
+
+.cubos {
+    height: 200px;
+
+    width: 70vw;
+    max-width: 400px;
+
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.cubos:hover {
+    transform: scale(1.1);
+}
+.cubos h6 {
+    font-size: 1.4em;
+}
+.cubos p {
+    font-size: 1em;
+}
+#secaoCustos h2 {
+    font-size: 1.5em;
+    margin-left: 2vw;
+    margin-bottom: 30px;
+}
+#secaoCustos > p {
+    padding: 0px;
+    margin-bottom: 40px;
+}
+#espacoCubos {
+    display: grid;
+    justify-items: center;
+    margin: auto;
+    grid-template-columns: 1fr;
+    max-width: 90vw;
+}
+@media screen and (max-width: 300px) {
+    .cubos {
+        width: 80vw;
+    }
+    .cubos h6 {
+        font-size: 1.2em;
+    }
+    #espacoCubos {
+        max-width: 95vw;
+    }
+}
+
+
+/*                                                 Seção Manutenção  */
+
+
+#secaoManutencao h2 {
+    text-align: left;
+    font-size: 1.5em;
+    margin-left: max(5px, 2vw);
+}
+#secaoManutencao article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-items: center;
+}
+#secaoManutencao p {
+    max-width: none;
+    width: 100%;
+    margin-left: max(5px, 2vw);
+}
+#secaoManutencao img {
+    height: auto;
+    width: 70vw;
+    max-width: 350px;
+    margin-right: 0px;
+    margin-top: 50px;
+}
+
+
+
+/*                                                 Divisões  */
+
+
+#divisaoUm {
+    border-top: none;
+    height: 160px;
+}
+#divisaoDois {
+    height: 140px;
+}
+#divisaoTres {
+    height: 200px;
+}
+#divisaoQuatro {
+    height: 160px;
+}
+#divisaoCinco {
+    height: 160px;
+}
+
+
+/*                                                  Outros  */
+
+
+.soMobile {
+    display: block;
+}
+.soComputador {
+    display: none;
+}
+.naoMobile {
+    display: none;
+}
+@media screen and (max-width: 360px) {
+    #quebraH1Principal {
+        display: none;
+    }
+}
+@media screen and (orientation: landscape) {
+    .imagensParagrafoRetratil {
+        max-width: 60vw;
+        height: auto;
+    }
+    .i#secaoManutencao img {
+        max-width: 40vw;
+        height: auto;
+    }
+}
