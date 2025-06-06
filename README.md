@@ -11,7 +11,7 @@ Este site foi desenvolvido individualmente por mim e entregue como uma proposta 
 ## 🌐 Link do Projeto
 
 Acesse o site hospedado pelo GitHub Pages:  
-👉 [WebbCrafters – Site da organização](https://mateusdefreitas.github.io/WebbCrafters/)
+👉 [WebbCrafters – Site da organização]
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -33,4 +33,4 @@ Acesse o site hospedado pelo GitHub Pages:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/MateusDeFreitas/WebbCrafters.git
+   git clone https://github.com/XavierNTC/WebbCrafters.git
