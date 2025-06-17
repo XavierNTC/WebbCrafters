@@ -18,6 +18,22 @@
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "rv1kchytgf");
+
+
+  // Mostrar botão ao descer a página
+  window.onscroll = function () {
+    const btn = document.getElementById("btnTopo");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Função para voltar ao topo suavemente
+  function voltarAoTopo() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 </script>
 </head>
 <body>
@@ -92,6 +108,9 @@
                 <p class="paragrafoDivisor"> 
                     Nossa equipe se dedica a criar soluções que não apenas atendam, mas superem as expectativas, garantindo resultados impressionantes e impactantes que deixam uma marca duradoura
                 </p>
+                    <span class="fundoEscuroSpan">
+                        <button id="btnTopo" onclick="voltarAoTopo()"> Voltar ao topo</button>
+                    </span>
             </div>
             <div id="conteinerImg">
                 <img src="imagens/imgPortfolio.png" alt="Imagem de portfólio">
